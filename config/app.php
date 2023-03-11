@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Sao_Paulo',//por padrão a data é UTC. Porém a data que usamos não é essa e sim America/Sao_Paulo. Caso aqui esteja a zona de data errada, posso ter dificuldade e erro por todo o sistema. UTC ESTÁ 3 HORAS A FRENTE DE America/Sao_Paulo.
 
     /*
     |--------------------------------------------------------------------------

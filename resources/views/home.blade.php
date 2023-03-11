@@ -16,9 +16,14 @@
             </h2>
             <div class="graph-header-line"></div>
             <div class="graph-header-date">
-                <img src="assets/img/icon-prev.png" alt="">
-                27 de Fevereiro
-                <img src="assets/img/icon-next.png" alt="">
+                <a href="{{route('home', ['filterDate' => $data['datePrevButton']])}}">
+                    {{-- 'filterDate' acima não é uma variavel para ser usada em home, e sim um parametro -> http://127.0.0.1:8000/?filterDate=2023-03-10.--}}
+                    <img src="assets/img/icon-prev.png" alt="">
+                </a>
+                {{$data['data']}}
+                <a href="{{route('home', ['filterDate' => $data['dateNextButton']])}}">
+                    <img src="assets/img/icon-next.png" alt="">
+                </a>
             </div>
         </div>
         <div class="graph-header-subtitle">Tarefas <b>3/6</b></div>
